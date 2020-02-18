@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.tag-main{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.taglist{
+    line-height: 30px;
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.blog-cont{
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.blogbox{
+    margin:30px 30px;
+    background-color: white;
+    border: solid 3px rgb(94, 92, 89);
+    border-radius: 10px;
+    height:120px;
+    width:800px;
+    margin: 30px auto;
+    display: flex;
+}
+.imagebox{
+    height:100px;
+    width:100px;
+    margin: 10px;
+}
+
+.blog-detailcontent{
+    width:600px;
+    text-align:left;
+}
+
+.blog-detailtitle{
+    font-size:20px;
+}

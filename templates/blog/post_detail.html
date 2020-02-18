@@ -1,0 +1,33 @@
+{% extends 'shop/index.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang = "ja">
+{% load static %}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title>TERRACE CAKE STUDIO</title>
+		<link rel="stylesheet" href="{% static 'blog/css/reset.css' %}">
+		<link rel="stylesheet" href="{% static 'blog/css/postdetail.css' %}">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+    <body>
+        <div class="area">
+            <h1>{{post.title}}</h1>
+            <p>{{post.updated_at | date}}</p>
+            <hr>
+            {{ post.content|safe  | linebreaksbr }}
+            <hr>
+            <p>{{ post.category}}</p>
+            <ul>
+                <li class = "tagname">tags:
+                    {% for tag in object.tags.all %}
+                        {{tag.name}},
+                    {%endfor%}
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
+{% endblock %}

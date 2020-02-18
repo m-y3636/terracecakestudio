@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "ja">
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title>TERRACE CAKE STUDIO</title>
+		<link rel="stylesheet" href="{% static 'shop/css/reset.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'shop/css/lightbox.css' %}">
+		<script src="{% static 'js/lightbox.js' %}"></script>
+	</head>
+	<body>
+		{% include 'shop/login.html' %}
+		<top>
+			<div class="top">
+				<div class="top-wrapper">
+					<div class="top-image">
+					</div>
+				</div>
+			</div>
+		</top>
+		<div class="main-container">
+			<div class="row indeex-main">
+				<div class="col-md-2">{% include 'shop/sidebar.html' %}</div>
+				<main class="col-md-8 index-main">
+					{% block content %}{% endblock %}	
+				</main>	
+				<div class="col-md-2">
+					{% include 'shop/search.html' %}
+					{% include 'shop/category.html' %}
+				</div>
+			</div>	
+		</div>
+		<footer>
+			<div class="container">
+				<div class="head-left">
+					<img src="images/logo.png" href="#">
+					<p class="login">ログイン</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

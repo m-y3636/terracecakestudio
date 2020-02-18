@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'shop/css/header_style.css' %}">
+        <link rel="stylesheet" href="{% static 'shop/css/resset.css' %}">
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo-img col-md-2" src="{% static 'shop/images/logo.png' %}" href="#">
+            <div class="menu col-md-8">
+                <ul>
+                    <li class="menu-btn"><a href = "{% url 'shop:top' %}">TOP</a></li>
+                    <li class="menu-btn"><a href = "{% url 'shop:blog' %}">BLOG</a></li>
+                    <li class="menu-btn"><a href="{% url 'shop:photo' %}">PHOTO</a></li>
+                    <li class="menu-btn"><a href="{% url 'shop:input' %}">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="login-btn col-md-2"><a href="{% url 'shop:blog' %}">login</a></div>
+        </header>
+    </body>
+</html>

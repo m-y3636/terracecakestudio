@@ -1,0 +1,24 @@
+body {
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+.area {
+    width:90%;
+    height:100%;
+    background-color: rgba(248, 252, 230, 0.5);
+    margin: 0 auto;
+    padding :60px 0 ;
+    line-height: 200%;
+    text-align: left;
+}
+
+h1 {
+    font-style: inherit;
+    font-size: x-large;
+}
+
+.tagname{
+    display: inline-block;
+    color: sienna;
+}
+

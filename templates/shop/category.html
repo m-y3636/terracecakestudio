@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'shop/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'shop/css/category_style.css' %}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>    </head>
+    <body>
+        <main>       
+            <div class="category-cont">
+                <h1>CATEGORYS</h1>
+                <div class="right-container">
+                    <div class="category">
+                        {% for category in categories %}
+                            <ul class="categorylist"><li>{{ category.name }}</li></ul>
+                        {% empty %}
+                            <ul class="categorylist"><li>カテゴリーはありません</li></ul>
+                        {% endfor %}
+                    </div>
+                </div>    
+            </div>
+        </main>
+    </body>
+</html>
+

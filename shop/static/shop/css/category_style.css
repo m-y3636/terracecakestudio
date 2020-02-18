@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.category-cont{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.categorylist{
+    line-height: 30px;
+}

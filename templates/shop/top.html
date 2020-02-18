@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'shop/index.html' %}
+{% block content %}
+{% load static %}
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{% static 'shop/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'shop/css/top_style.css' %}">
+    </head>
+    <main>
+        <div class="top-cont">
+            <h1>What's new</h1>
+            <div class="new-info">
+                <h2>最新情報</h2>
+                <ul>
+                    <li>test</li>
+                </ul>
+            </div>
+            <div class=lesson-info>
+                <h2>教室情報</h2>
+                <ul>
+                    <li>サロン専用のプライベートハウスでのレッスンです。</li>
+                    <li>1〜4名の少人数完全予約制です。</li>
+                    <li>メニューは月替りですが、リクエストにも対応可能です。</li>
+                    <li>一人一台お作りいただき、お持ち帰りいただけます。有料でお箱のご用意もいたします。</li>
+                    <li>所要時間は3時間です。</li>
+                    <li>講師の作成した見本を元にレシピ説明し、実習をしていただきます。</li>
+                    <li>オーブンでケーキを焼いている間にティータイムでケーキの試食をしていただけます。</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="access">
+
+            </div>
+        </div>
+    </main>
+</html>
+{% endblock %}

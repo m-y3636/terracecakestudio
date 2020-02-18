@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'shop/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'shop/css/search_style.css' %}">
+    </head>
+    <body>
+        <main class="tag-main">
+            <h1>SEARCH</h1>
+            <form class="navbar-item field has-addons" actions="{% url 'shop:blog' %}" method="get" accept-charset="utf-8">
+                <div class="control">
+                  <input class="input" type="text" name="q" placeholder="検索・・・">
+                </div>
+                <div class="control">
+                  <button class="button is-info" type="submit">検索<span clas="icon"><i clss="fasfa-search"></i></span></button>
+                </div>
+            </form> 
+        </main>
+    </body>
+</html>

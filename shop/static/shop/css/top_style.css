@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.top-cont{
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.top-cont h2{
+    font-size: x-large;
+}
+
+.new-info, .lesson-info{
+    margin: 20px;
+}
+
+li{
+    line-height: 30px;
+}

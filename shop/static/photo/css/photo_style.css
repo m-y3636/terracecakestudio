@@ -1,0 +1,10 @@
+.photo-cont{
+    width:90%;
+    display: inline-block;
+    padding-top: 60px;
+}
+
+.photobox{
+    text-align: center;
+    padding: 10px;
+}
