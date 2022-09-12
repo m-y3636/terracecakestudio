@@ -2,6 +2,8 @@ from django.urls import path
 
 from shop.views import IndexView, PostDetailView, CategoryListView, TagListView, PostListView, PhotoView, PostForm
 
+# test_uploadGit
+
 app_name = 'shop'
 urlpatterns = [
     path('', IndexView.as_view(), name = 'top'),
